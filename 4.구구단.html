@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>gugudan</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1><a href="index.html">WEB</a></h1>
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value === 'night'){
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+  }
+} else {
+  target.style.backgroundColor ='white';
+  target.style.color = 'black';
+  this.value = 'night';
+
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = 'blue';
+    i = i + 1;
+  }
+}
+">
+<div id="grid">
+<ol>
+<li><a href="1.html">html</a></li>
+<li><a href="2.html">CSS</a></li>
+<li><a href="3.html">JavaScript</a></li>
+<li><a href="4.구구단">구구단</a></li>
+</ol>
+
+<div id="article">
+<h2 style="background-color: blueviolet;">구구단</h2>
+<p>자기초적인 곱셈표로, 분배법칙, 지수법칙 등과 결합되어 곱셈 계산을 대단히 빠르게 한다.[1] 구구법(九九法)이라고도 한다. 한국에서는 초등학교 2학년 2학기 수학[2] 2단원에 '곱셈구구'라는 이름으로 나온다. 구구단은 앞으로 배울 곱셈의 기초가 되므로 중요하다. 인간은 10진수를 사용하므로, 일반적으로 2부터 9까지의 숫자를 1부터 9까지 곱하여 나오는 값들을 늘어놓은 목록이다.[3]
+</p>
+
+<img src="gugudan.jpg"style="width:100%; height=10%">
+</div>
+
+    <script>
+      var i = 2;
+      while(i <= 9) {
+        var j = 1;
+        while(j <= 9) {
+          document.write(i + " x " + j + " = " + (i*j) + "<br>");
+          j++;
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>
