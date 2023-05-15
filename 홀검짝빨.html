@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>홀검짝빨</title>
+    <style>
+      .even {
+        color: red;
+      }
+      .odd {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>홀검짝빨</h1>
+    <p>버튼을 클릭하면 1에서 100까지 출력됩니다.</p>
+    <button onclick="countNumbers()">index.html</button>
+    <div id="result"></div>
+    <script>
+      function countNumbers() {
+        var resultDiv = document.getElementById("result");
+        var i = 1;
+        while (i <= 100) {
+          var colorClass = i % 2 === 0 ? "even" : "odd";
+          resultDiv.innerHTML += "<p class='" + colorClass + "'>" + i + "</p>";
+          i++;
+        }
+      }
+    </script>
+  </body>
+</html>

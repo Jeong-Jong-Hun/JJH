@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>거꾸로합</title>
+  </head>
+  <body>
+    <h1>거꾸로100</h1>
+    <p>버튼을 클릭하면 100에서 1까지 거꾸로 출력됩니다.</p>
+    <button onclick="startCountdown()">index.html</button>
+    <script>
+      function startCountdown() {
+        var i = 100;
+        while (i >= 1) {
+          if (i === 1) {
+            document.write(i);
+          } else {
+            document.write(i + "<br>");
+          }
+          i--;
+        }
+      }
+    </script>
+  </body>
+</html>

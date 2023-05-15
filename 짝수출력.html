@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>짝수 출력</title>
+  </head>
+  <body>
+    <h1>짝수출력</h1>
+    <p>버튼을 클릭하면 1에서 100까지 출력됩니다.</p>
+    <button onclick="calculateEvenSum()">index.html</button>
+    <script>
+      function calculateEvenSum() {
+        var i = 2;
+        while (i <= 100) {
+          if (i % 2 === 0) {
+            document.write(i + "<br>");
+          }
+          i++;
+        }
+      }
+    </script>
+  </body>
+</html>
