@@ -1,0 +1,47 @@
+.btn-outline-success {
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-success:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.first-line {
+    border-bottom: 1px solid #392d23;
+}
+
+.second-line a{
+    color: white
+    text-decoration: none;
+}
+
+.third-line{
+    display: none;
+}
+
+@media screen and (max-width:48rem){
+    .first-line{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:48rem){
+    .second-line {
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+ }
+
+ @media screen and (max-width:28rem){
+    .third-line{
+        display: block;
+    }
+ }
